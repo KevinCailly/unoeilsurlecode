@@ -1,0 +1,64 @@
+{
+    "site": {
+        "name":"Un oeil sur le code"
+    },
+    "about": {
+        "name": "À propos",
+        "intro": "Bienvenue sur le site <em>\"un oeil sur le code\"</em>. J'ai entièrement créé ce site afin de montrer mes compétences en informatique. Vous pourrez trouver mes projets et réalisations, les langages et frameworks que j'utilise, ainsi que mes coordonnées.",
+        "question": "<strong>Pourquoi \"un oeil sur le code\" ?</strong>",
+        "response": "Je ne souhaitais pas utiliser mon nom et mon prénom, comme le font la majorité des développeurs qui ont un portfolio.<br>Initialement quand j'ai conçu ce site, il avait pour vocation de servir de portfolio.<br>Mais je voulais également faire un blog de développeur, un devblog, pour montrer l'avancement de mes projets personnels, centraliser mes connaissances...<br>Une autre idée m'est venue, celle d'explorer des anciens codes en BASIC, Assembleur, etc, et de l'adapter a des langages un peu plus récents.<br>Je voulais garder un oeil sur le code pour faire ma propre expérience. Vous voyez donc le lien qui m'a amené au nom de ce site ;)",
+        "presentation": "Bonjour, je m'appelle Kévin Cailly, j'ai { age } ans, et je suis addict à... euh non je suis un simple développeur informatique.<br>Avec ce site portfolio, j'espère que vous comprendrez que je suis un informaticien touche à tout !<br><strong>Ma force ?</strong> Bien que je me sois spécialisé dans les systèmes embarqués, je peux passer de la conception d'un firmware, au développement d'une application mobile, ou à l'élaboration et au déploiement d'un site web.",
+        "edito": {
+            "name": "Edito",
+            "text": "Je suis actuellement employé chez <a href=\"https://sii-group.com/fr-FR\" target=\"_blank\" class=\"text-blue-400\">SII</a>, une ESN qui renouvelle chaque année et sans démériter, son label <strong>Great Place To Work</strong>.<br>Je suis également auto-entrepreneur, bien que cette partie-là ne soit pas vraiment développée par manque de temps."
+        }
+    },
+    "skills": {
+        "name": "Compétences",
+        "resume": "Mon CV",
+        "empty": "Pas de compétences enregistrées pour le moment. Merci de patienter.",
+        "hard skills" : "Compétences techniques",
+        "soft skills" : "Compétences personnelles",
+        "today": "Aujourd'hui",
+        "clickForMore": "Cliquez pour plus de détails",
+        "back": "Retour"
+    },
+    "portfolio": {
+        "name": "Portfolio",
+        "projects": "Projets",
+        "empty": "Pas de projets enregistrés pour le moment. Merci de patienter.",
+        "presentation": "Voici quelques projets que j'ai réalisé"
+    },
+    "blog": {
+        "name": "DevBlog",
+        "intro": "Sur ce devblog, vous pouvez retrouver l'ensemble de mes connaissances et projets sous forme d'articles, que je publierai quand j'aurai du temps.<br>Je rajouterai probablement d'autres fonctionnalités comme la possibilité de laisser des commentaires, de partager, ou encore de rechercher par thème.<br>Tous les articles de ce blog sont ma propriété, vous ne pouvez pas les utiliser sans mon autorisation.",
+        "articles": {
+            "no articles": "Désolé mais pour l'instant il n'y a pas d'article. Merci de patienter.",
+            "articles": "Articles",
+            "projects": "Projets",
+            "all": "Tous"
+        },
+        "article": {
+            "see more": "Voir plus",
+            "work": "Mon travail",
+            "published": "Publié le",
+            "read": "Lire",
+            "gallery": "Galerie"
+        }
+    },
+    "contact": {
+        "name": "Contact",
+        "show_larger_map": "Afficher une carte plus grande",
+        "address": "Bourges (18), France",
+        "meet_me": "Si vous souhaitez en savoir plus sur moi, vous pouvez me contacter via LinkedIn ou par email",
+        "mail": "contact{'@'}unoeilsurlecode.fr"
+    },
+    "footer": {
+        "notice" : "Mentions légales",
+        "back_top": "Retour en haut",
+        "license": {
+            "code": "Code source sous licence",
+            "content": "Contenu des articles sous licence"
+        }
+    }
+}
