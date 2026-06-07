@@ -1,0 +1,64 @@
+{
+    "site": {
+        "name":"Un oeil sur le code"
+    },
+    "about": {
+        "name": "About me",
+        "intro": "Welcome to the website <em>\"un oeil sur le code\"</em> also translatable by <em>\"keep an eye on code\"</em>. I handmade everything on this site, even translation errors, to show my skills. You could find my projects and creations, languages and frameworks I use, as well as my contact details.",
+        "question": "<strong>Why \"un oeil sur le code\" or \"keep an eye on code\" ?</strong>",
+        "response": "I didn't want to use my name like many developers who have a portfolio site.<br>This site was supposed to serve as a portfolio.<br>But I wanted to make a developer's blog, a devblog, to show the evolution of my projects, and centralized my knowledges...<br>I had another idea, exploring old codes in BASIC, Assembleur, etc, and adapting them to \"newer\" languages.<br>I wanted to keep an eye on code to do my own experience. Now you see the link with the name of my website ;)",
+        "presentation": "Hi, my name is Kevin Cailly, I'm { age }, and I'm addict to... uh no I'm just a software developer.<br>By this portfolio, I hope you will understand I'm a computer scientist who masters a bit of all the computer fields !<br><strong>My strength ?</strong> Even if I'm specialized on embedded systems, I can switch from developing a firmware to developing a mobile app, or to developing and deploying a website.",
+        "edito": {
+            "name": "Edito",
+            "text": "I'm currently a software developer at <a href=\"https://sii-group.com/fr-FR\" target=\"_blank\" class=\"text-blue-400\">SII</a>, a Digital Services Company that renews each year and without demerit its label <strong>Great Place To Work</strong>.<br>I'm also a self-entrepreneur, even if this part is not very developed due to lack of time."
+        }
+    },
+    "skills": {
+        "name": "Skills",
+        "resume": "My resume",
+        "empty": "No skills have been saved for now. Please be patient.",
+        "hard skills" : "Hard skills",
+        "soft skills" : "Soft skills",
+        "today": "Today",
+        "clickForMore": "Click for more details",
+        "back": "Back"
+    },
+    "portfolio": {
+        "name": "Portfolio",
+        "projects": "Projects",
+        "empty": "No projects have been saved for now. Please be patient.",
+        "presentation": "Here is some projects i've made"
+    },
+    "blog": {
+        "name": "DevBlog",
+        "intro": "On this devblog, you can find articles that describe all my knowledge and my projects, which I will publish when I have time.<br>I will probably add other features like leaving comments, sharing and searching by theme.<br>All articles in this blog are my property, you don't have the right to use them without my authorization.",
+        "articles": {
+            "no articles": "Sorry, but there is no article for now. Please be patient.",
+            "articles": "Articles",
+            "projects": "Projects",
+            "all": "All"
+        },
+        "article": {
+            "see more": "See more",
+            "work": "My work",
+            "published": "Published on",
+            "read": "Read",
+            "gallery": "Gallery"
+        }
+    },
+    "contact": {
+        "name": "Contact",
+        "show_larger_map": "Show a larger map",
+        "address": "Bourges (18), France",
+        "meet_me": "To know more, you may contact me on LinkedIn or by email",
+        "mail": "contact{'@'}unoeilsurlecode.fr"
+    },
+    "footer": {
+        "notice" : "Legal notices",
+        "back_top": "Top",
+        "license": {
+            "code": "Source code licensed under",
+            "content": "Article content licensed under"
+        }
+    }
+}

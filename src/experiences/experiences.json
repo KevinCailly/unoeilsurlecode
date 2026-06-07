@@ -1,0 +1,297 @@
+{
+    "experiences": [
+        {
+            "id": "1",
+            "company": "Messer",
+            "location": "Mitry-Mory (77), France",
+            "start_date": "2009",
+            "end_date": "2016",
+            "role": {
+                "fr": "Technicien de laboratoire et Métrologue",
+                "en": "Laboratory technician and Metrologist"
+            },
+            "description": {
+                "fr": "Pour le compte de Messer, producteur et fournisseur de gaz industriel, j'effectuais le contrôle qualité du gaz mis en bouteille, dans le respect de la norme ISO/CEI 17025 par accréditation COFRAC. Puis j'ai évolué vers la métrologie en effectuant l'étalonnage et l'entretien des analyseurs.",
+                "en": "On behalf of Messer, a producer and supplier of industrial gases, I performed quality control of gas cylinders in compliance with the ISO/CEI 17025 standard through COFRAC accreditation. Then I moved into metrology by making the calibration and maintenance of analyzers."
+            },
+            "hard_skills": {
+                "fr": [
+                    "Spectrométrie de masse",
+                    "CPG",
+                    "IR",
+                    "IRTF",
+                    "Chimiluminescence",
+                    "Fluorescence UV",
+                    "mesures",
+                    "étalonnage"
+                ],
+                "en": [
+                    "MS",
+                    "GC",
+                    "IR",
+                    "IRTF",
+                    "chemiluminescence",
+                    "UV Fluorescence",
+                    "measures",
+                    "calibration"
+                ]
+            },
+            "soft_skills": {
+                "fr": [
+                    "Rigueur",
+                    "Contrôle de qualité",
+                    "Fiabilité"
+                ],
+                "en": [
+                    "Rigor",
+                    "Quality control",
+                    "Fiability"
+                ]
+            }
+        },
+        {
+            "id": "2",
+            "company": "-",
+            "location": "Blois (41), France",
+            "start_date": "2017",
+            "end_date": "2018",
+            "role": {
+                "fr": "Reconversion professionnelle pour devenir développeur logiciel",
+                "en": "Professional retraining to become software developer"
+            },
+            "description": {
+                "fr": "J'ai fait mes débuts dans le monde de l'informatique, en commençant par du dev Web et la création de ce site.",
+                "en": "I made my debut in the world of computer science starting by Web dev and creation of this website."
+            },
+            "hard_skills": {
+                "fr": [
+                    "HTML",
+                    "CSS",
+                    "Javascript",
+                    "PHP",
+                    "Java"
+                ],
+                "en": [
+                    "HTML",
+                    "CSS",
+                    "Javascript",
+                    "PHP",
+                    "Java"
+                ]
+            },
+            "soft_skills": {
+                "fr": [
+                    "Confiance en soi",
+                    " Autonomie",
+                    "Curiosité"
+                ],
+                "en": [
+                    "self-confidence",
+                    " Autonomy",
+                    "Curiosity"
+                ]
+            }
+        },
+        {
+            "id": "3",
+            "company": "ENMAN",
+            "location": "Naveil (41), France",
+            "start_date": "2018",
+            "end_date": "2019",
+            "role": {
+                "fr": "Analyste développeur",
+                "en": "Analyst developer"
+            },
+            "description": {
+                "fr": "Projet IoT : Développement d'un firmware à base d'ESP8266, et d'une appli Android pour Avidsen.",
+                "en": "IoT project : Firmware development based on ESP8266, and Android app development for Avidsen."
+            },
+            "hard_skills": {
+                "fr": [
+                    "C",
+                    "ESP8266",
+                    "Java",
+                    "Android"
+                ],
+                "en": [
+                    "C",
+                    "ESP8266",
+                    "Java",
+                    "Android"
+                ]
+            },
+            "soft_skills": {
+                "fr": [
+                    "Respect",
+                    "Gestion du temps",
+                    "Flexibilité/adaptabilité"
+                ],
+                "en": [
+                    "Respect",
+                    "Time management",
+                    "Flexibility/adaptability"
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "company": "Creatym / Safran Engineering Services",
+            "location": "Bordes (64), France",
+            "start_date": "2019",
+            "end_date": "2020",
+            "role": {
+                "fr": "Développeur logiciel",
+                "en": "Software developer"
+            },
+            "description": {
+                "fr": "Projet aéronotique : Développement, maintenance et tests de logiciel outils (TL) chez Safran Engineering Services.",
+                "en": "Aeronotic project : Development, maintenance and tests of tools software (TL) at Safran Engineering Services."
+            },
+            "hard_skills": {
+                "fr": [
+                    "C#",
+                    "CAN",
+                    "RS"
+                ],
+                "en": [
+                    "C#",
+                    "CAN",
+                    "RS"
+                ]
+            },
+            "soft_skills": {
+                "fr": [
+                    "Travail en équipe",
+                    "Coordination",
+                    "Attitude positive"
+                ],
+                "en": [
+                    "Team work",
+                    "Coordination",
+                    "Positive attitude"
+                ]
+            }
+        },
+        {
+            "id": "5",
+            "company": "ACEI (maintenant IRIAN Technologies)",
+            "location": "Pau (64), France",
+            "start_date": "2020",
+            "end_date": "2021",
+            "role": {
+                "fr": "Développeur logiciel et Métrologue",
+                "en": "Software developer and Metrologist"
+            },
+            "description": {
+                "fr": "Projet bancs d'essais Haute Pression / Haute Température : IHM pour bancs d'essais chez Total Energies. J'étais également en charge de la gestion de l'informatique de l'entreprise, et du suivi métrologique des équipements.",
+                "en": "High Pressure and High Temperature tests benches project : IHM for tests benches at Total Energies. I was also in charge of the company's IT managament, and metrological monitoring of equipments."
+            },
+            "hard_skills": {
+                "fr": [
+                    "VB6",
+                    "RS",
+                    "Modbus",
+                    "Gestion parc informatique",
+                    "Sécurité informatique"
+                ],
+                "en": [
+                    "VB6",
+                    "RS",
+                    "Modbus",
+                    "IT management",
+                    "IT Security"
+                ]
+            },
+            "soft_skills": {
+                "fr": [
+                    "Responsabilité",
+                    "Professionnalisme",
+                    "Résolution de problème"
+                ],
+                "en": [
+                    "Responsability",
+                    "Professionalism",
+                    "Problem solving"
+                ]
+            }
+        },
+        {
+            "id": "6",
+            "company": "Studiel / Safran Engineering Services",
+            "location": "Bordes (64), France",
+            "start_date": "2021",
+            "end_date": "2022",
+            "role": {
+                "fr": "Développeur logiciel et Analyste de données",
+                "en": "Software developer and Data analyst"
+            },
+            "description": {
+                "fr": "Projet aéronotique : Retour post-COVID chez Safran Engineering Services, pour un projet d'analyse de données avioniques et mise en place d'une interface web.",
+                "en": "Aeronautic project : Post-COVID return at Safran Engineering Services, about avionic data analysis and Web interface conception."
+            },
+            "hard_skills": {
+                "fr": [
+                    "Python",
+                    "Data Analyst",
+                    "C#"
+                ],
+                "en": [
+                    "Python",
+                    "Data Analyst",
+                    "C#"
+                ]
+            },
+            "soft_skills": {
+                "fr": [
+                    "Faire confiance",
+                    "Esprit critique",
+                    "Méthodique"
+                ],
+                "en": [
+                    "Trust",
+                    "Critical mind",
+                    "Methodical"
+                ]
+            }
+        },
+        {
+            "id": "7",
+            "company": "SII / Secteur de la Défense",
+            "location": "Bourges (18), France",
+            "start_date": "2022",
+            "end_date": "Aujourd'hui",
+            "role": {
+                "fr": "Développeur et Architecte logiciel",
+                "en": "Developer and software architect"
+            },
+            "description": {
+                "fr": "Projet défense : Développeur et architecte logiciel embarqué pour un acteur de la Défense.",
+                "en": "Defense project : Embedeed software developer and architecte for a Defense actor."
+            },
+            "hard_skills": {
+                "fr": [
+                    "C",
+                    "C++",
+                    "Python"
+                ],
+                "en": [
+                    "C",
+                    "C++",
+                    "Python"
+                ]
+            },
+            "soft_skills": {
+                "fr": [
+                    "Rigeur",
+                    "Responsabilité",
+                    "Travail en équipe"
+                ],
+                "en": [
+                    "Rigor",
+                    "Responsability",
+                    "Team work"
+                ]
+            }
+        }
+    ]
+}
