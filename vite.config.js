@@ -5,7 +5,6 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import sitemapPlugin from './src/plugins/sitemap.js'
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/unoeilsurlecode/' : '/',
   plugins: [
     vue(),
     mode !== 'production' && vueDevTools(),
