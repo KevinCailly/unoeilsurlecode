@@ -4,7 +4,6 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/unoeilsurlecode/' : '/',
   plugins: [
     vue(),
     vueDevTools(),
