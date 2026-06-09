@@ -63,18 +63,29 @@ function customBlockPlugin(md) {
 
 function injectImages(content, articleId) {
   return content.replace(
-    /<!--\s*IMAGE:(\w+)\s*-->/g,
-    (_, name) => {
+    /<!--\s*IMAGE:(\w+)(?:\|([^-]*))?\s*-->/g,
+    (_, name, alt) => {
       const src = `/images/articles/${articleId}/${name}.webp`
-      return `<div class="relative z-30">
-        <img src="${src}" alt="${name}" class="rounded-lg shadow-md my-6 mx-auto max-h-96 object-contain" />
-      </div>`
+      const altText = alt?.trim() || name  // si pas de alt, utilise le nom de l'image
+      return `<img src="${src}" alt="${altText}" title="${altText}" class="rounded-lg shadow-md my-6 mx-auto max-h-96 object-contain" />`
     }
   )
 }
 
 const md = new MarkdownIt({ html: true })
 md.use(customBlockPlugin)
+
+md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+  const token = tokens[idx]
+  const href = token.attrGet('href')
+
+  if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+    token.attrSet('target', '_blank')
+    token.attrSet('rel', 'noopener noreferrer')
+  }
+
+  return self.renderToken(tokens, idx, options)
+}
 
 export function useMarkdown() {
   const render = (content, articleId = null) => {
