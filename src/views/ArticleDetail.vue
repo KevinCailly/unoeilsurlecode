@@ -1,27 +1,48 @@
 <template>
-  <div v-if="!article">
-    <p class="mt-2 text-center text-gray-600">{{ t('blog.article.not_found') }}</p>
+  
+  <!-- Cover -->
+  <div v-if="article" class="relative z-30">
+    <img v-if="article.image" :src="article.image" :alt="locale === 'fr' ? article.titleFR : article.titleEN" class="w-full object-cover"/>
   </div>
-  <div v-else class="flex flex-col items-center justify-center">
+  
+  <div class="flex flex-row">
+    <div class="w-1/5"></div>
+    <div class="w-3/5">
+      <div v-if="!article">
+        <p class="mt-2 text-center text-gray-600">{{ t('blog.article.not_found') }}</p>
+      </div>
+      <div v-else class="flex flex-col items-center justify-center">
+        <h1 class="py-6 text-6xl">
+          {{ locale === 'fr' ? article.titleFR : article.titleEN }}
+        </h1>
 
-    <!-- Cover -->
-    <img v-if="article.image" :src="article.image" :alt="locale === 'fr' ? article.titleFR : article.titleEN" class="w-full object-cover z-30"/>
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span v-for="tag in (locale === 'fr' ? article.tagsFR : article.tagsEN)" :key="tag" class="px-2 py-1 text-sm rounded bg-gray-200 dark:bg-gray-700">
+            #{{ tag }}
+          </span>
+        </div>
 
-    <h1 class="py-6 text-6xl">
-      {{ locale === 'fr' ? article.titleFR : article.titleEN }}
-    </h1>
-
-    <!-- Tags -->
-    <div class="flex flex-wrap gap-2 mt-4">
-      <span v-for="tag in article.tags" :key="tag" class="px-2 py-1 text-sm rounded bg-gray-200 dark:bg-gray-700">
-        #{{ tag }}
-      </span>
+        <!-- Info -->
+        <div class="flex flex-row gap-2 mt-4 justify-between w-full">
+          <span v-if="article.time">
+            {{ t('blog.article.reading time') }} : {{ article.time }}
+          </span>
+          <span v-if="article.date">
+            {{ t('blog.article.written') }} : {{ article.date }}
+          </span>
+        </div>
+        
+        <!-- Contenu -->
+        <div class="prose prose-lg max-w-none w-full px-4 mt-12 z-30" v-html="compiledContent"/>
+        
+      </div>
     </div>
+    <div class="w-1/5"></div>
+  </div>
 
-    <!-- Contenu -->
-    <div class="prose prose-lg max-w-none w-full px-4 mt-8" v-html="compiledContent"/>
-
-    <!-- Gallery -->
+  <!-- Gallery -->
+  <div v-if="article">
     <div v-if="galleryImages.length > 0" class="relative z-30 w-full bg-gray-900 dark:bg-gray-700 mt-12">
       <div class="flex flex-col items-center justify-center py-8">
         <h2 class="text-white py-6 text-4xl">{{ t('blog.article.gallery') }}</h2>
@@ -47,9 +68,10 @@ const article = computed(() => getById(route.params.id))
 
 const compiledContent = computed(() => {
   if (!article.value) return ''
-  return locale.value === 'fr'
+  const content = locale.value === 'fr'
     ? article.value.contentFR
     : article.value.contentEN
+  return content
 })
 
 const allImages = import.meta.glob(

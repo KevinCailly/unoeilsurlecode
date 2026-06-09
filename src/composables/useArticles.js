@@ -7,7 +7,7 @@ const mdModules = import.meta.glob('@/articles/*.md', { query: '?raw', import: '
 const allArticles = Object.entries(mdModules).map(([, raw]) => {
   const { data, content } = parseFrontmatter(raw)
   const { contentFR, contentEN } = splitBilingualContent(content)
-
+  
   return {
     id: data.id ?? null,
     slugFR: data.slugFR ?? '',
@@ -17,7 +17,9 @@ const allArticles = Object.entries(mdModules).map(([, raw]) => {
     excerptFR: data.excerptFR ?? '',
     excerptEN: data.excerptEN ?? '',
     date: data.date ?? null,
-    tags: Array.isArray(data.tags) ? data.tags : [],
+    tagsFR: Array.isArray(data.tagsFR) ? data.tagsFR : [],
+    tagsEN: Array.isArray(data.tagsEN) ? data.tagsEN : [],
+    time: data.time ?? '',
     image: data.image ?? null,
     contentFR: render(contentFR, data.id),
     contentEN: render(contentEN, data.id),
@@ -25,9 +27,9 @@ const allArticles = Object.entries(mdModules).map(([, raw]) => {
 }).sort((a, b) => new Date(b.date) - new Date(a.date))
 
 function parseFrontmatter(raw) {
-  const normalized = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n')
-  
+  const normalized = raw.replace(/\r\n/g, '\n')
   const match = normalized.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
+
   if (!match) return { data: {}, content: normalized }
 
   const data = {}
@@ -43,7 +45,7 @@ function parseFrontmatter(raw) {
     data[key.trim()] = value
   })
 
-  return { data, content: match[2] }
+  return { data, content: match[2].trimStart() }
 }
 
 function splitBilingualContent(content) {

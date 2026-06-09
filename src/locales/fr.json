@@ -43,7 +43,9 @@
             "work": "Mon travail",
             "published": "Publié le",
             "read": "Lire",
-            "gallery": "Galerie"
+            "gallery": "Galerie",
+            "written": "Rédigé le",
+            "reading time": "Temps de lecture estimé"
         }
     },
     "contact": {
