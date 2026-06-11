@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <!-- *********************************************** -->
     <!-- *************** Header picture **************** -->
     <!-- *********************************************** -->
@@ -93,10 +93,16 @@
           {{ t('contact.name') }}
         </h2>
 
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative grid md:grid-cols-2 gap-12 items-center z-30">
           <div class="space-y-6 text-left">
             <p class="flex items-center gap-4"><PinMark /> {{ t('contact.address') }}</p>
             <p class="flex items-center gap-4"><MailMark /> {{ t('contact.mail') }}</p>
+            <a href="https://www.linkedin.com/in/kevin-cailly" class="flex items-center gap-4" target="_blank">
+              <LinkedinLogo/> Kevin Cailly
+            </a>
+            <a href="https://github.com/KevinCailly" class="flex items-center gap-4" target="_blank">
+              <GithubLogo/> KevinCailly
+            </a>
             <p class="opacity-70">{{ t('contact.meet_me') }}</p>
           </div>
 
@@ -105,7 +111,7 @@
             <iframe class="w-full h-[300px]" frameborder="0" scrolling="no"
               src="https://www.openstreetmap.org/export/embed.html?bbox=2.167739868164063%2C46.982594624734936%2C2.620925903320313%2C47.18457933279254&amp;layer=mapnik&amp;marker=47.083682706950036%2C2.3943328857421875">
             </iframe>
-          </div>
+          </div> 
 
         </div>
       </div>
@@ -116,19 +122,19 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRoute } from 'vue-router'
-import { useArticles } from '@/composables/useArticles'
-import { useExperiences } from '@/composables/useExperiences'
+import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { useArticles } from '@/composables/useArticles';
+import { useExperiences } from '@/composables/useExperiences';
 import { useCurrentYear } from '@/composables/useCurrentYear';
-import Parallax from '@/components/Parallax.vue'
-import Timeline from '@/components/Timeline.vue'
-import MailMark from '@/components/MailMark.vue'
-import PinMark from '@/components/PinMark.vue'
+import Parallax from '@/components/Parallax.vue';
+import Timeline from '@/components/Timeline.vue';
+import MailMark from '@/components/MailMark.vue';
+import PinMark from '@/components/PinMark.vue';
+import LinkedinLogo from '@/components/LinkedinLogo.vue';
+import GithubLogo from '@/components/GithubLogo.vue';
 import ProjectCarousel from '@/components/ProjectCarousel.vue';
 
 const { t, locale } = useI18n()
-const route = useRoute()
 const isMobile = ref(false);
 const { currentYear } = useCurrentYear()
 const age = ref(currentYear - 1988)
