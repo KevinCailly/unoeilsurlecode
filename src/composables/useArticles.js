@@ -59,7 +59,7 @@ function splitBilingualContent(content) {
 
 export function useArticles() {
   const getAll = () => allArticles || []
-  const getByTag = (tag) => allArticles.filter(a => a.tags.includes(tag)) || []
+  const getByTag = (tag) => allArticles.filter(a => a.tagsFR.includes(tag) || a.tagsFR.includes(tag)) || []
   const getAllExcludeTag = (tag) => allArticles.filter(a => !a.tags.includes(tag)) || []
   const getById = (id) => allArticles.find(a => a.id === id) ?? []
 
