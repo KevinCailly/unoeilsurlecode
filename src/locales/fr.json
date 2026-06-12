@@ -6,11 +6,11 @@
         "name": "À propos",
         "intro": "Bienvenue sur le site <em>\"un oeil sur le code\"</em>. J'ai entièrement créé ce site afin de montrer mes compétences en informatique. Vous pourrez trouver mes projets et réalisations, les langages et frameworks que j'utilise, ainsi que mes coordonnées.",
         "question": "<strong>Pourquoi \"un oeil sur le code\" ?</strong>",
-        "response": "Je ne souhaitais pas utiliser mon nom et mon prénom, comme le font la majorité des développeurs qui ont un portfolio.<br>Initialement quand j'ai conçu ce site, il avait pour vocation de servir de portfolio.<br>Mais je voulais également faire un blog de développeur, un devblog, pour montrer l'avancement de mes projets personnels, centraliser mes connaissances...<br>Une autre idée m'est venue, celle d'explorer des anciens codes en BASIC, Assembleur, etc, et de l'adapter a des langages un peu plus récents.<br>Je voulais garder un oeil sur le code pour faire ma propre expérience. Vous voyez donc le lien qui m'a amené au nom de ce site ;)",
+        "response": "Je ne souhaitais pas utiliser mon nom et mon prénom, comme le font la majorité des développeurs qui ont un portfolio.<br>Initialement quand j'ai conçu ce site, il avait pour vocation de servir de portfolio.<br>Mais je voulais également faire un blog de développeur, un devblog, pour montrer l'avancement de mes projets personnels, centraliser et partager mes connaissances...<br>Une autre idée m'est venue, celle d'explorer des anciens codes en BASIC, Assembleur, etc, et de les adapter a des langages un peu plus récents.<br>Je voulais garder un oeil sur le code pour faire ma propre expérience. Vous voyez donc le lien qui m'a amené au nom de ce site ;)",
         "presentation": "Bonjour, je m'appelle Kévin Cailly, j'ai { age } ans, et je suis addict à... euh non je suis un simple développeur informatique.<br>Avec ce site portfolio, j'espère que vous comprendrez que je suis un informaticien touche à tout !<br><strong>Ma force ?</strong> Bien que je me sois spécialisé dans les systèmes embarqués, je peux passer de la conception d'un firmware, au développement d'une application mobile, ou à l'élaboration et au déploiement d'un site web.",
         "edito": {
             "name": "Edito",
-            "text": "Je suis actuellement employé chez <a href=\"https://sii-group.com/fr-FR\" target=\"_blank\" class=\"text-blue-400\">SII</a>, une ESN qui renouvelle chaque année et sans démériter, son label <strong>Great Place To Work</strong>.<br>Je suis également auto-entrepreneur, bien que cette partie-là ne soit pas vraiment développée par manque de temps."
+            "text": "Je suis actuellement employé chez <a href=\"https://sii-group.com/fr-FR\" target=\"_blank\" class=\"text-blue-400\">SII</a>, une ESN qui renouvelle chaque année et sans démériter, son label <strong>Great Place To Work</strong>.<br>Je suis également auto-entrepreneur, bien que cette partie-là ne soit pas vraiment développée par manque de temps, je peux tout de même vous aider sur du support technique, ou de la conception de site vitrine."
         }
     },
     "skills": {
@@ -61,6 +61,13 @@
         "license": {
             "code": "Code source sous licence",
             "content": "Contenu des articles sous licence"
+        }
+    },
+    "error": {
+        "404": {
+            "title": "Page introuvable",
+            "message": "La page que vous cherchez n'existe pas ou a été renommée.",
+            "back": "Retour à l'accueil"
         }
     }
 }

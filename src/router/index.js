@@ -4,6 +4,7 @@ import Home from "@/views/Home.vue";
 import Articles from "@/views/Articles.vue";
 import ArticleDetail from "@/views/ArticleDetail.vue";
 import Notice from "@/views/Notice.vue";
+import NotFound from "@/views/NotFound.vue";
 
 const routes = [
     {
@@ -31,7 +32,12 @@ const routes = [
 				component: Notice
 			},
 		]
-    }
+    },
+	{
+		path: '/:locale(fr|en)?/:pathMatch(.*)*',
+		name: 'not-found',
+		component: NotFound
+	}
 ]
 
 const router = createRouter({
