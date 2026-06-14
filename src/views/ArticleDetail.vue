@@ -125,8 +125,20 @@ watch(
 </script>
 
 <style scoped>
+
 img.object-cover {
   max-height: 450px;
   object-fit: cover;
 }
+
+.prose :where(ul, ol) {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose :where(li) {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
 </style>
