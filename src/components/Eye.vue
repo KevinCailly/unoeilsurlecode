@@ -172,7 +172,6 @@ function updateIsMobile() {
     top: 15%;
     opacity: 0.2;
     border-radius: 15%;
-    background-color: var(--logo-bg);
 }
 
 .pupil {

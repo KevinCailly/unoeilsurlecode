@@ -35,7 +35,7 @@
 
       <div class="relative z-30">
         <div class="flex flex-col bg-bg rounded shadow-2xl dark:shadow-md dark:shadow-white my-10">
-          <h4 class="font-bold px-6">{{ t('about.edito.name') }}</h4>
+          <h4 class="font-bold pt-6">{{ t('about.edito.name') }}</h4>
           <div class="w-3/4 h-0.5 bg-text dark:bg-darktext mx-auto my-10 rounded-full"></div>
           <p class="py-6 px-4 text-center" v-html="$t('about.edito.text')"></p>
         </div>
