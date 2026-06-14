@@ -9,7 +9,7 @@ excerptEN: This article allows me to capitalize on my knowledge in the field of 
 date: 2026-06-12
 tagsFR: [physique-chimie, laboratoire, métrologie, connaissances]
 tagsEN: [physical-chemistry, laboratory, metrology, knowledge]
-time: 15 min
+time: 12 min
 image: /images/articles/lR24Rwt1Zin2/cover.webp
 ---
 
@@ -187,7 +187,7 @@ Lorsque les ions viennent frapper ce détecteur, cela va entraîner une réactio
 
 Cette appareil est vraiment fascinant et j'ai passé de nombreuses heures dessus, ainsi que sur les chromato indiqués plus haut, surtout celui avec le plasma.<br>
 Sur la fin de ma carrière chez Messer, j'ai participé à la mise en place du petit frère du GAM300: le GAM500.<br>
-Sur cette partie là j'ai fait mes premiers vrais pas dans le développement professionnel, et vous pourrez retrouver cette aventure dans cet [article]().
+Sur cette partie là j'ai fait mes premiers vrais pas dans le développement professionnel, et vous pourrez retrouver cette aventure dans cet [article](https://unoeilsurlecode.fr/fr/article/UDiOkMqtQ383/interface-utilisation-spectrometre-de-masse).
 
 
 <!-- lang:en -->
