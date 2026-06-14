@@ -19,24 +19,37 @@
         </div>
         <div v-else>
           <ul class="space-y-2">
-            <li v-for="article in paginatedArticles" :key="article.id" class="mb-2 p-2 border rounded shadow-sm hover:shadow-md dark:shadow-white transition">
+            <li v-for="article in paginatedArticles" :key="article.id" class="mb-2 p-2 border bg-bg rounded shadow-sm hover:shadow-md dark:shadow-white transition">
               <router-link :to="{ name: 'article-detail', params: { locale: locale, id: article.id, slug: locale === 'fr' ? article.slugFR : article.slugEN } }">
-                <h2 class="text-lg font-semibold mb-2">
-                  {{ locale === 'fr' ? article.titleFR : article.titleEN }}
-                </h2>
-                <p class="text-gray-600 mb-2">
-                  {{ locale === 'fr' ? article.excerptFR : article.excerptEN }}
-                </p>
-                <div class="flex items-center justify-between text-xs">
-                  <ul class="flex gap-2 flex-1 justify-center min-w-0">
-                    <li v-for="tag in article.tags" :key="tag" class="rounded-full px-2 py-1 bg-gray-600 text-white dark:bg-white dark:text-black">
-                      #{{ tag }}
-                    </li>
-                  </ul>
-                  <small class="text-gray-500 mx-4 shrink-0">
-                    {{ t('blog.article.published') }}
-                    {{ formatDate(article.date) }}
-                  </small>
+                <div class="flex gap-4 items-center">
+
+                  <!-- Image -->
+                  <img v-if="article.image" :src="article.image" :alt="locale === 'fr' ? article.titleFR : article.titleEN" class="w-24 h-24 object-cover rounded shrink-0"/>
+                  <div v-else class="w-24 h-24 bg-gray-200 dark:bg-gray-700 rounded shrink-0 flex items-center justify-center">
+                    <span class="text-gray-400 text-xs">No image</span>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="flex-1 min-w-0">
+                    <h2 class="text-lg font-semibold mb-2">
+                      {{ locale === 'fr' ? article.titleFR : article.titleEN }}
+                    </h2>
+                    <p class="text-gray-600 mb-2">
+                      {{ locale === 'fr' ? article.excerptFR : article.excerptEN }}
+                    </p>
+                    <div class="flex items-center justify-between text-xs">
+                      <ul class="flex gap-2 flex-1 justify-center min-w-0">
+                        <li v-for="tag in article.tags" :key="tag" class="rounded-full px-2 py-1 bg-gray-600 text-white dark:bg-white dark:text-black">
+                          #{{ tag }}
+                        </li>
+                      </ul>
+                      <small class="text-gray-500 mx-4 shrink-0">
+                        {{ t('blog.article.published') }}
+                        {{ formatDate(article.date) }}
+                      </small>
+                    </div>
+                  </div>
+
                 </div>
               </router-link>
             </li>

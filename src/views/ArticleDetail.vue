@@ -34,7 +34,7 @@
         </div>
         
         <!-- Contenu -->
-        <div class="prose prose-lg max-w-none w-full px-4 mt-12 z-30" v-html="compiledContent"/>
+        <div class="prose prose-lg max-w-none w-full px-4 mt-12 z-30 text-text" v-html="compiledContent"/>
         
       </div>
     </div>
@@ -125,8 +125,25 @@ watch(
 </script>
 
 <style scoped>
+
 img.object-cover {
   max-height: 450px;
   object-fit: cover;
 }
+
+.prose :where(ul, ol) {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose :where(li) {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+.prose :where(h1), .prose :where(h2), .prose :where(h3),
+.prose :where(h4), .prose :where(h5), .prose :where(h6) {
+  color: var(--text);
+}
+
 </style>
