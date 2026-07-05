@@ -34,7 +34,7 @@
                                 {{ locale === 'fr' ? exp.role.fr : exp.role.en }}
                             </h3>
                             <div class="text-sm opacity-90 mb-1">
-                                {{ exp.startDate }} - {{ exp.endDate || t('skills.today') }}
+                                {{ exp.start_date }} - {{ exp.end_date || t('skills.today') }}
                             </div>
                             <div class="text-sm opacity-90 mb-4">
                                 {{ exp.company }} - {{ exp.location }}
